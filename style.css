@@ -5,14 +5,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100%;
-}
-
-#invite, #details {
-    scroll-snap-align: start;
 }
 
 body {
@@ -175,7 +169,7 @@ body {
     font-size: 0.68rem;
     letter-spacing: 0.1em;
     color: #c8a84b;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .info-main {
@@ -191,7 +185,7 @@ body {
     font-size: 0.72rem;
     line-height: 1.5;
     color: #c8a84b;
-    opacity: 0.5;
+    opacity: 0.75;
     word-break: break-word;
 }
 
@@ -333,9 +327,6 @@ body {
 
 /* ── Landscape on small screens ── */
 @media (max-height: 500px) and (orientation: landscape) {
-    html {
-        scroll-snap-type: none;
-    }
     #invite, #details {
         height: auto;
         min-height: 100svh;
